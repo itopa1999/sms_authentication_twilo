@@ -10,7 +10,7 @@ def index(request):
     if request.method == 'POST':
         phone_number = request.POST.get('phone_number')  # Assuming you have a form with a phone_number field
         verification_code = str(random.randint(100000, 999999))
-
+        print(request.POST.get('phone_number'))
         # Save the verification code in your database or cache for later verification
         #request.session['verification_code'] = verification_code
 
@@ -22,7 +22,7 @@ def index(request):
             to=phone_number
         )
         print(f"HTTP Response Status: {message.status}")
-        return render(request, 'verification_sent.html')
+        return render(request, 'verification.html')
     
     return render(request, 'index.html')
 
