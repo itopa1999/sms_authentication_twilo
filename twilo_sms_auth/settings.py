@@ -128,10 +128,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# TWILIO call_auth and voice_auth KEYS
-TWILIO_ACCOUNT_SID = 'AC19a7d195fd10cca6ad991394a1e8c69d'
-TWILIO_AUTH_TOKEN = 'b59a2db8b5adec60c8312cf3df1d5988'
-TWILIO_PHONE_NUMBER = '+12242316538'
+
 
 '''
 # TWILIO call_auth and voice_auth KEYS
